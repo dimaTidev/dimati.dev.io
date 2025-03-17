@@ -1,8 +1,7 @@
 'use client';
 
-import { PeopleContext } from "@/data/people/peopleContext";
 import Styles from "./footer.module.css";
-import { Suspense, useContext, useState } from "react";
+import { Suspense } from "react";
 import Socials from "@/lib/socials/socials";
 import ActionButton from "@/lib/UIComponents/ActionButton";
 import { Size, Variant } from "@/lib/UIComponents/uiCommon";
