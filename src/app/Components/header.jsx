@@ -2,7 +2,6 @@
 
 import Socials from "@/lib/socials/socials";
 import Styles from "./header.module.css";
-import { PeopleContext } from "@/data/people/peopleContext";
 import { Suspense, useContext } from "react";
 import Link from "next/link";
 import ActionButton from "@/lib/UIComponents/ActionButton";
