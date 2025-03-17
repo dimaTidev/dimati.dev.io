@@ -1,0 +1,32 @@
+.pageWrapper {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  max-width: 1600px;
+  width: 75%;
+
+  gap: 64px;
+}
+
+.leftSidePanel{
+  width: 220px;
+
+  flex-shrink: 0;
+}
+
+.mainPanel{
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
