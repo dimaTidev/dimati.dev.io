@@ -8,7 +8,6 @@ import { Size, Variant } from "@/lib/UIComponents/uiCommon";
 import Link from "next/link";
 import { Modal, ModalContent } from "@/lib/floatingUI/modal";
 import { DialogDescriptionArea, DialogHeading } from "@/lib/floatingUI/dialog";
-import ContactForm from "./contactForm";
 import { gql, useSuspenseQuery } from "@apollo/client";
 import Fade from "@/lib/UIComponents/fadeIn";
 import Skeleton from "react-loading-skeleton";
