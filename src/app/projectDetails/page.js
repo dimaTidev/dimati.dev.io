@@ -20,7 +20,7 @@ import Fade from "@/lib/UIComponents/fadeIn";
 import Callout from "@/lib/UIComponents/callout";
 
 const GET_PROJECT = gql`
-  query GetProject($projectId: String){
+  query GetProjectDetails($projectId: String){
     allProject(where: { id: { current: { eq: $projectId } } }) {
         title
         description

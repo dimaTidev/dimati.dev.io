@@ -18,7 +18,7 @@ import { gql, useSuspenseQuery } from '@apollo/client';
 import Skeleton from 'react-loading-skeleton'
 
 const GET_PERSON = gql`
-  query GetPerson {
+  query GetAboutMe {
     AboutMe(id: "aboutMe") {
       person {
         email

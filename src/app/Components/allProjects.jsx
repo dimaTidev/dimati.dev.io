@@ -14,7 +14,7 @@ import Fade from "@/lib/UIComponents/fadeIn";
 // TODO: add error check if there is no variable adfljlaksjdlkadsj then catch the error
 
 const GET_PROJECTS = gql`
-  query {
+  query GetAllProjects{
     allProject(sort: [{ orderRank: ASC }]){
         id{
             current
