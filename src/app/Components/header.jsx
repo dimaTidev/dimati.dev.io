@@ -45,6 +45,7 @@ function HeaderLoading(){
 }
 
 function HeaderContent(){
+  return;
   const { data: queryData } = useSuspenseQuery(GET_PERSON);
   
   const data = queryData.AboutMe;
