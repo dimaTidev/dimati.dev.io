@@ -144,9 +144,9 @@ function ProjectCard({ projectData }){
     const previewAnimationUrl = projectData.previewAnimation?.asset?.url ?? previewImageUrl;
     
     return (
-        <div className={Styles.projectCardWrapper}>
+        <div className={Styles.projectCardWrapper} onClick={() => console.log("clicked project card wrapper:", projectData.id.current)}>
             <div className={Styles.glowEffect} style={{background: `radial-gradient(circle, ${glowColor}, transparent)`}}/>
-            <Link href={`/projectDetails?id=${projectData.id.current}`}>
+            <Link href={`/projectDetails?id=${projectData.id.current}`} onClick={() => console.log("clicked project link:", projectData.id.current)}>
                 <div className={Styles.projectCard}>
                     <div className={Styles.projectBanner}>
                         {/* <div className={Styles.overlay} style={{backgroundColor: hexToRGBA(glowColor, 0.1)}}>
