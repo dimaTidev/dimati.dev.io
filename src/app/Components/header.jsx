@@ -45,7 +45,8 @@ function HeaderLoading(){
 }
 
 function HeaderContent(){
-  return;
+  console.log("Render header");
+  // return;
   const { data: queryData } = useSuspenseQuery(GET_PERSON);
   
   const data = queryData.AboutMe;

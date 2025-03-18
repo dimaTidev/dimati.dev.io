@@ -56,7 +56,9 @@ function FooterLoading(){
 }
 
 function FooterContent(){
-  return;
+  console.log("Render footer");
+  
+  // return;
     const { data: queryData } = useSuspenseQuery(GET_PERSON);
     // const [isContactFormOpen, setContactFormOpen] = useState(false);
 
