@@ -11,7 +11,7 @@ import { gql, useSuspenseQuery } from "@apollo/client";
 import Skeleton from "react-loading-skeleton";
 import Fade from "@/lib/UIComponents/fadeIn";
 
-// TODO: add error check if there is no variable adfljlaksjdlkadsj then catch the error
+// TODO: add error check if there is no variable on remote then catch the error
 
 const GET_PROJECTS = gql`
   query GetAllProjects{
@@ -113,6 +113,9 @@ function ProjectCardLoading(){
 
 function ProjectList(){
     const { data } = useSuspenseQuery(GET_PROJECTS);
+
+    // console.log("allProjects data", JSON.stringify(data, undefined, 2));
+    // return;
     
     const allProjects = data?.allProject ?? [];
     

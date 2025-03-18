@@ -135,8 +135,12 @@ function Page(){
 
     const { data: queryData } = useSuspenseQuery(GET_PROJECT, {
         variables: { projectId: id }, 
-        skip: !id // Prevents query from running if id is undefined
+        skip: !id, // Prevents query from running if id is undefined
+        returnPartialData: true,
     });
+
+    // console.log("queryData project:", JSON.stringify(queryData, undefined, 2));
+    // return;
 
     // TODO: return 404
     if (!queryData) return <p>Loading...</p>;

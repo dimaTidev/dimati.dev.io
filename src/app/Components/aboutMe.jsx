@@ -17,7 +17,7 @@ import { gql, useSuspenseQuery } from '@apollo/client';
 
 import Skeleton from 'react-loading-skeleton'
 
-const GET_PERSON = gql`
+export const GET_ABOUT_ME = gql`
   query GetAboutMe {
     AboutMe(id: "aboutMe") {
       person {
@@ -52,7 +52,10 @@ export function AboutMeLoading(params){
 
 export default function AboutMe(params) {
   // const [isContactFormOpen, setContactFormOpen] = useState(false);
-  const { data: queryData } = useSuspenseQuery(GET_PERSON);
+  const { data: queryData } = useSuspenseQuery(GET_ABOUT_ME);
+
+  // console.log("allProjects data", JSON.stringify(data, undefined, 2));
+  // return;
 
   const personData = queryData?.AboutMe.person;
 
