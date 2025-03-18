@@ -1,5 +1,5 @@
 'use client';
-import { ApolloContextProvider } from '@/lib/apollo/ApolloContextProvider';
+import { ApolloContextProvider } from '@/lib/apollo/apolloContextProvider';
 
 export default function CommonContexts({children}) {
   return (
