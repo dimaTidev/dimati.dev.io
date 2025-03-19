@@ -52,7 +52,7 @@ export function AboutMeLoading(params){
 
 export default function AboutMe(params) {
   // const [isContactFormOpen, setContactFormOpen] = useState(false);
-  const { data: queryData } = useSuspenseQuery(GET_ABOUT_ME);
+  const { data: queryData } = useSuspenseQuery(GET_ABOUT_ME, { returnPartialData: true });
 
   // console.log("allProjects data", JSON.stringify(data, undefined, 2));
   // return;

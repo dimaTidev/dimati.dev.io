@@ -1,78 +1,68 @@
+
+import { aboutMeData } from '@/data/aboutMe';
+import AllProjectsData from '@/data/allProjects';
 import { ApolloClient, InMemoryCache, makeVar } from '@apollo/client';
 
-const aboutMeVar = makeVar({
-    person: {
-      email: "john@example.com",
-      socialLinks: ["https://twitter.com/john"],
-      shortAboutMe: "I am a developer.",
-      location: "New York",
-      fullName: "John Doe",
-      avatarImage: {
-        asset: {
-          url: "next.svg",
-        }
-      }
-    },
-    resumeUrl: "https://example.com/resume.pdf"
-});
+const aboutMeVar = makeVar(aboutMeData);
 
-const allProjectVar = makeVar([
-    { 
-        id: { 
-            current: "1" 
-        }, 
-        title: "Project One",
-        description: "description",
-        orderRank: 1,
-        team:[
-            {
-                person:{
-                    fullName: "jake",
-                    socialLinks: [],
-                    email: "",
-                    avatarImage:{
-                        asset:{
-                            url: "next.svg"
-                        }
-                    }
-                }
-            }
-        ],
-        postRaw: [],
-        previewImage:{
-            asset:{
-                url: "next.svg"
-            }
-        },
-        previewAnimation:{
-            asset:{
-                url: "next.svg"
-            }
-        },
-        videoLinks: [],
-        galleryScreenshots: [],
-        callOut: "This is the test",
-        techStack:[
-           {
-                title: "hello",
-                icon:{
-                    asset:{
-                        url: "file.svg"
-                    }
-                },
-           }
-        ],
-        platforms:[
-            {
-                icon:{
-                    asset:{
-                        url: "window.svg"
-                    }
-                }   
-            }
-        ]
-    },
-]);
+const allProjectVar = makeVar(AllProjectsData);
+// const allProjectVar = makeVar([
+//     { 
+//         id: { 
+//             current: "1" 
+//         }, 
+//         title: "Project One",
+//         description: "description",
+//         orderRank: 1,
+//         team:[
+//             {
+//                 person:{
+//                     fullName: "jake",
+//                     socialLinks: [],
+//                     email: "",
+//                     avatarImage:{
+//                         asset:{
+//                             url: "next.svg"
+//                         }
+//                     }
+//                 }
+//             }
+//         ],
+//         postRaw: [],
+//         previewImage:{
+//             asset:{
+//                 url: "next.svg"
+//             }
+//         },
+//         previewAnimation:{
+//             asset:{
+//                 url: "next.svg"
+//             }
+//         },
+//         videoLinks: [],
+//         galleryScreenshots: [],
+//         callOut: "This is the test",
+//         techStack:[
+//            {
+//                 title: "hello",
+//                 icon:{
+//                     asset:{
+//                         url: "file.svg"
+//                     }
+//                 },
+//            }
+//         ],
+//         platforms:[
+//             {
+//                 icon:{
+//                     asset:{
+//                         url: "window.svg"
+//                     }
+//                 }   
+//             }
+//         ]
+//     },
+// ]);
 
 const createTypePolicies = (fields) => ({
     Query: {

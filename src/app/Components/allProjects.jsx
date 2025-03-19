@@ -112,7 +112,7 @@ function ProjectCardLoading(){
 }
 
 function ProjectList(){
-    const { data } = useSuspenseQuery(GET_PROJECTS);
+    const { data } = useSuspenseQuery(GET_PROJECTS, { returnPartialData: true });
 
     // console.log("allProjects data", JSON.stringify(data, undefined, 2));
     // return;
@@ -167,17 +167,17 @@ function ProjectCard({ projectData }){
 
                         <div className="u-layout_flex-row u-layout_flex-space-between-center" style={{opacity: "0.7"}}>
                             {projectData.techStack && (
-                                <div className="u-layout_flex-row u-layout_flex-start-center gap-m">
+                                <div className="u-layout_flex-row u-layout_flex-start-center">
                                     {projectData.techStack.map((el, id) => {
-                                        return <Chip key={id} icon={el.icon.asset.url} title={el.title}/>;
+                                        return <Chip key={id} icon={el.icon.asset.url}/>;
                                     })}
                                 </div>
                             )}
 
                             {projectData.platforms && (
-                                <div className="u-layout_flex-row u-layout_flex-start-center gap-m">
+                                <div className="u-layout_flex-row u-layout_flex-start-center">
                                     {projectData.platforms.map((el, id) => {
-                                        return <Chip key={id} icon={el.icon.asset.url} isWithoutLabel={true}/>;
+                                        return <Chip key={id} icon={el.icon.asset.url}/>;
                                     })}
                                 </div>
                             )}

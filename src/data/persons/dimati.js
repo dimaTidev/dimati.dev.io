@@ -1,0 +1,46 @@
+export const person_dimati = {
+    id: "dima-tymofiienko",
+    fullName: "Dima Tymofiienko",
+    location: "Toronto, Canada",
+    shortAboutMe: "Senior Software and Web developer with 10+ years of experience",
+    socialLinks: [
+        `https://www.linkedin.com/in/dimatidev/`,
+        `https://github.com/dimaTidev`    
+    ],
+    email: "timofeenkodima@gmail.com",
+    avatarImage:{
+        asset:{
+            url: "/data/persons/dimati.webp"
+        }
+    }
+}
+
+export const person_daronRus = {
+    id: "daron-rus",
+    fullName: "Ruslan Vorona",
+    shortAboutMe: "Software developer",
+    location: "Bucharest, Romania",
+    socialLinks: [
+        `https://www.linkedin.com/in/daron-ua-a72811113/`,    
+    ],
+    avatarImage:{
+        asset:{
+            url: "/data/persons/daronRus.png"
+        }
+    }
+}
+
+export const person_chafik = {
+    id: "chafik-achache",
+    fullName: "Chafik Achache",
+    shortAboutMe: "Senior Software Developer | Technical Lead",
+    location: "Montreal, Canada",
+    socialLinks: [
+        `https://www.linkedin.com/in/chafik-achache-1b388238/`,    
+    ],
+    avatarImage:{
+        asset:{
+            url: "/data/persons/chafik.jpg"
+        }
+    }
+}

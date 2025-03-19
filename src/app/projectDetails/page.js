@@ -36,8 +36,9 @@ const GET_PROJECT = gql`
                     }
                 }
             }
-        }
-        postRaw,
+        }    
+        postRaw
+        postImages
         previewImage {
             asset {
             url
@@ -188,6 +189,9 @@ function Page(){
     const combinedMarkdown = data.postRaw?.map(block => {
         return block.children.map(child => child.text).join('');
     }).join('\n\n'); // Separate blocks with double newline for proper Markdown rendering
+
+    // Convert the array to a Map
+    const imageMap = new Map(data.postImages?.map(item => [item.alt, item.image.asset.url]));
     
 
     return (
@@ -220,7 +224,7 @@ function Page(){
                             {combinedMarkdown && (
                                 <ShowMoreSection>
                                     <div>
-                                        <Markdown rawSource={combinedMarkdown}/>
+                                        <Markdown rawSource={combinedMarkdown} imageMap={imageMap}/>
                                     </div>
                                 </ShowMoreSection>
                             )}
@@ -284,17 +288,20 @@ function AboutProject({projectData, ...params}){
                 )}
 
                 {projectData.techStack && (
-                    <div className="u-layout_flex-row u-layout_flex-space-between-center gap-m">
-                        <div className="u-text-secondary">Stack</div>
-                        <div className="u-layout_flex-row u-layout_flex-end-start gap-m u-layout_flex-wrap">
-                            {projectData.techStack.map((el, id) => {
-                                return <Chip key={id} icon={el.imageUrl} title={el.title}/>;
-                            })}
+                    <>
+                        <div className="u-layout_flex-row u-layout_flex-space-between-center gap-m">
+                            <div className="u-text-secondary">Stack</div>
+                            <div className="u-layout_flex-row u-layout_flex-end-start gap-m u-layout_flex-wrap">
+                                {projectData.techStack.map((el, id) => {
+                                    return <Chip key={id} icon={el.imageUrl} title={el.title}/>;
+                                })}
+                            </div>
                         </div>
-                    </div>
+                        <hr/>
+                    </>
                 )}
 
-                <hr/>
+               
 
                 {/* {projectData?.links?.githubUrl && 
                     // TODO: make the project links work
