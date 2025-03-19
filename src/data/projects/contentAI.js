@@ -2,7 +2,7 @@ import { person_daronRus, person_dimati } from "../persons/dimati";
 import { stackCSharp, stackJavaScript, stackNextjs, stackReact, stackUnity } from "../etc/stack";
 import { platformMobile, platformPC } from "../etc/platforms";
 
-const imagePath = "/data/projects/contentAI"
+const imagePath = "data/projects/contentAI"
 
 export const projectContentAI = {
     id: { 

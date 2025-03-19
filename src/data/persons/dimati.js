@@ -10,7 +10,7 @@ export const person_dimati = {
     email: "timofeenkodima@gmail.com",
     avatarImage:{
         asset:{
-            url: "/data/persons/dimati.webp"
+            url: "data/persons/dimati.webp"
         }
     }
 }
@@ -25,7 +25,7 @@ export const person_daronRus = {
     ],
     avatarImage:{
         asset:{
-            url: "/data/persons/daronRus.png"
+            url: "data/persons/daronRus.png"
         }
     }
 }
@@ -40,7 +40,7 @@ export const person_chafik = {
     ],
     avatarImage:{
         asset:{
-            url: "/data/persons/chafik.jpg"
+            url: "data/persons/chafik.jpg"
         }
     }
 }

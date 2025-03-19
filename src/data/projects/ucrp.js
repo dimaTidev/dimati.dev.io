@@ -23,7 +23,7 @@ export const projectUCRP = {
         }
     ],
     previewImage:{
-        asset:{ url: "/data/projects/ucrp/preview.webp" }
+        asset:{ url: "data/projects/ucrp/preview.webp" }
     },
     // previewAnimation:{
     //     asset:{
@@ -35,13 +35,13 @@ export const projectUCRP = {
         `https://www.youtube.com/embed/WTCf5geMghw`
     ],
     galleryScreenshots: [
-        { asset:{ url: `/data/projects/ucrp/gallery/ucrp_assets.webp` }},
-        { asset:{ url: `/data/projects/ucrp/gallery/ucrp_collaborate.webp` }},
-        { asset:{ url: `/data/projects/ucrp/gallery/ucrp_vr.webp` }},
-        { asset:{ url: `/data/projects/ucrp/gallery/vr_metadata.webp` }},
-        { asset:{ url: `/data/projects/ucrp/gallery/vr_move.webp` }},
-        { asset:{ url: `/data/projects/ucrp/gallery/walk.webp` }},
-        { asset:{ url: `/data/projects/ucrp/gallery/collaborators.webp` }},
+        { asset:{ url: `data/projects/ucrp/gallery/ucrp_assets.webp` }},
+        { asset:{ url: `data/projects/ucrp/gallery/ucrp_collaborate.webp` }},
+        { asset:{ url: `data/projects/ucrp/gallery/ucrp_vr.webp` }},
+        { asset:{ url: `data/projects/ucrp/gallery/vr_metadata.webp` }},
+        { asset:{ url: `data/projects/ucrp/gallery/vr_move.webp` }},
+        { asset:{ url: `data/projects/ucrp/gallery/walk.webp` }},
+        { asset:{ url: `data/projects/ucrp/gallery/collaborators.webp` }},
     ],
     techStack:[
         stackUnity,
@@ -56,19 +56,19 @@ export const projectUCRP = {
     callOut: undefined,
     postImages: [
         {
-            image:{ asset:{ url: `/data/projects/ucrp/postImages/OrbitControls.gif` }},
+            image:{ asset:{ url: `data/projects/ucrp/postImages/OrbitControls.gif` }},
             // url: `8ffe4ca914eb970044f590256026ba92ce5c3d7a-800x450-gif`
             alt: "Fly mode"
         },
         {
-            image:{ asset:{ url: `/data/projects/ucrp/postImages/WalkMode.gif` }},
+            image:{ asset:{ url: `data/projects/ucrp/postImages/WalkMode.gif` }},
             //url: `1df70171a14ca19b9ac46b5e1df08ef430a8709f-800x450-gif`
             alt: "Walk mode"
         },
         {
             image:{
                 asset:{
-                    url: `/data/projects/ucrp/postImages/VRMode.gif`
+                    url: `data/projects/ucrp/postImages/VRMode.gif`
                     // url: `9eb6e6af005df91b8fad428270fd18cc458bc39f-800x450-gif`
                 }
             },
@@ -77,7 +77,7 @@ export const projectUCRP = {
         {
             image:{
                 asset:{
-                    url: `/data/projects/ucrp/postImages/Metadata.gif`
+                    url: `data/projects/ucrp/postImages/Metadata.gif`
                     // url: `1eb8d26dec9c54e31b4da802510a97b0ccdafd5c-800x450-gif`
                 }
             },
@@ -86,7 +86,7 @@ export const projectUCRP = {
         {
             image:{
                 asset:{
-                    url: `/data/projects/ucrp/postImages/DeepLink.gif`
+                    url: `data/projects/ucrp/postImages/DeepLink.gif`
                     // url: `ece5755b888d54294dab227246f557b9537766ba-800x450-gif`
                 }
             },
@@ -95,7 +95,7 @@ export const projectUCRP = {
         {
             image:{
                 asset:{
-                    url: `/data/projects/ucrp/postImages/Theming.gif`
+                    url: `data/projects/ucrp/postImages/Theming.gif`
                     // url: `fe6a022f72fe14952437a644f5b7aa6387a3722e-800x450-gif`
                 }
             },
@@ -104,7 +104,7 @@ export const projectUCRP = {
         {
             image:{
                 asset:{
-                    url: `/data/projects/ucrp/postImages/UI_VR_480.gif`
+                    url: `data/projects/ucrp/postImages/UI_VR_480.gif`
                     // url: `c5ca7886ca195c0196f4cbcfeb122db2a948e595-480x270-gif`
                 }
             },
@@ -113,7 +113,7 @@ export const projectUCRP = {
         {
             image:{
                 asset:{
-                    url: `/data/projects/ucrp/postImages/UI_VR2_480.gif`
+                    url: `data/projects/ucrp/postImages/UI_VR2_480.gif`
                     // url: `d3ec5db3cdd3aa5c1d6e0d86aa11713ea21156bf-480x270-gif`
                 }
             },

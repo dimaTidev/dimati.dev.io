@@ -2,7 +2,7 @@ import { person_dimati } from "../persons/dimati";
 import { stackJavaScript, stackNextjs, stackReact } from "../etc/stack";
 import { platformPC } from "../etc/platforms";
 
-const imagePath = "/data/projects/riskManagement"
+const imagePath = "data/projects/riskManagement"
 
 export const projectRiskManagement = {
     id: { 
