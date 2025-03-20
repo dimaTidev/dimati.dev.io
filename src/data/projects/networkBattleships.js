@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/networkBattleships");
 
 export const projectNetworkBattleships = {
-    id: { 
-        current: "network-battleships" 
-    }, 
+    id: { current: "HackBattleShips" },
     title: "Network battleships",
     description: `Each player controls a ship. The main goal to survive in the game. Each ship can shoot cannon balls and take down other ships.`,
     orderRank: 104,

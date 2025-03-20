@@ -6,7 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/slimeAttack");
 
 export const projectSlimeAttack = {
-    id: { current: "slime-attack" }, 
+    id: { current: "SlimeAttack" }, 
     title: "Slime attack",
     description: `2d color match game. Main goal feed porings with the same color of apple. In the game you can upgrade and use some special skills.`,
     orderRank: 109,

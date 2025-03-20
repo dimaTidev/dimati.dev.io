@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/vrWeaponsShowcase");
 
 export const projectVrWeaponsShowcase = {
-    id: { 
-        current: "vr-weapon-showcase" 
-    }, 
+    id: { current: "VR_weapon_showcase" },
     title: "VR weapon showcase",
     description: `VR weapon interaction showcase. Built on WebXR Export. Currently available pistol. Other weapons are on the way.`,
     orderRank: 103,

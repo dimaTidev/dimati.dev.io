@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/hideio");
 
 export const projectHideio = {
-    id: { 
-        current: "hideio" 
-    }, 
+    id: { current: "HideIO" }, 
     title: "HideIO",
     description: `A multiplayer hide and seek game made on the Unity Network. You can play for hider or seeker. Hiders can morph to objects. Seekers have to find hiders. You also can customize character like clothes, boots, helmets and weapons.`,
     orderRank: 108,

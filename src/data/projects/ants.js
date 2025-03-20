@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/ants");
 
 export const projectAnts = {
-    id: { 
-        current: "ant-project" 
-    }, 
+    id: { current: "DOTSAnts" }, 
     title: "Ants simulation",
     description: `This was a challenging migration project. I migrated the existing Object Oriented project to Data oriented technology stack (DOTS) and improved performance from 1FPS to 60 FPS.
 The simulation is simple: we have ants, food source and ant's home. The ants should bring food to the home. When ants carrying a food they are excited and drop pheromones to attract other ants to go for the food. Also there are obstacles in form of walls.`,

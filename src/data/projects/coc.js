@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/coc");
 
 export const projectCoc = {
-    id: { 
-        current: "clash-of-crime" 
-    }, 
+    id: { current: "COC" }, 
     title: "Clash of Crime",
     description: `Released in 2016 on GooglePlay and Apple AppStore. In the game you can fight, shoot weapons, steal vehicles, run away from the police.`,
     orderRank: 112,

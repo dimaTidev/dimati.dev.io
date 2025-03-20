@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/brawlKarts");
 
 export const projectBrawlKarts = {
-    id: { 
-        current: "brawl-karts" 
-    }, 
+    id: { current: "BrawlKarts" },
     title: "Brawl Karts",
     description: `Prototype. Casual racing game. You can select 1 of 5 types of vehicles. You can use weapons to survive. Who drives too slowly will be run over by an evil machine.`,
     orderRank: 106,

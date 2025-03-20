@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/sas");
 
 export const projectSas = {
-    id: { 
-        current: "clash-of-zombie" 
-    }, 
+    id: { current: "ClashOfZombie" },
     title: "Clash of Zombie",
     description: `Clone of the game SAS3. You can buy weapons, ammo, grenades and participate in battles with zombies.`,
     orderRank: 115,

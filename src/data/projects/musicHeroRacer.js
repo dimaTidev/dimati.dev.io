@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/musicHeroRacer");
 
 export const projectMusicHeroRacer = {
-    id: { 
-        current: "music-hero-racer" 
-    }, 
+    id: { current: "MusicHeroRacer" },
     title: "Music hero racer",
     description: `Variation of the Guitar Hero game . In this game, you need to collect blocks to the music. Collect cars and upgrade them.`,
     orderRank: 107,

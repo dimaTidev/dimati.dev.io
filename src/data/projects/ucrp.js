@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/ucrp");
 
 export const projectUCRP = {
-    id: { 
-        current: "ucrp" 
-    }, 
+    id: { current: "UCRP"  }, 
     title: "Digital twins",
     description: `The project is a fully functional collaborative design review tool for 3D assets. Supports PC, Android, iOS, WebGL, VR (Quest2) and Hololens.
 

@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/crazyMachines");
 
 export const projectCrazyMashines = {
-    id: { 
-        current: "crazy-machines" 
-    }, 
+    id: { current: "VR_Crazy_Machines" },
     title: "Crazy Machines",
     description: `Crazy Machines Clone. Built on WebXR Export. VR Puzzle physics-based game where you have to solve puzzles using physical objects, steam pipes, belts, gears, and electric wires.`,
     orderRank: 102,

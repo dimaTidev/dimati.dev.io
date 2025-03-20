@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/wod");
 
 export const projectWOD = {
-    id: { 
-        current: "world-of-derby" 
-    }, 
+    id: { current: "WOD" },
     title: "World of Derby",
     description: `Released in 2015 on GooglePlay and AppStore. World of Derby its a racing game about derby in arenas. We were inspired by the game Flatout 2. In the game a player can buy and upgrade, repair cars and takes part in arena battles.`,
     orderRank: 114,

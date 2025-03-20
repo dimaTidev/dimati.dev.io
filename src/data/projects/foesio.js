@@ -6,9 +6,7 @@ import { FixImagePath } from "@/lib/utils/imagePathUtils";
 const imagePath = FixImagePath("/data/projects/foesio");
 
 export const projectFoesio = {
-    id: { 
-        current: "foesio" 
-    }, 
+    id: {  current: "FoesIO" }, 
     title: "FoesIO",
     description: `Clone FoesIO. 2D top down battle royale. Pick up weapon, ammo, armor and be the last one alive.`,
     orderRank: 105,
