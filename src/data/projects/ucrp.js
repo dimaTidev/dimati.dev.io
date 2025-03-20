@@ -3,7 +3,7 @@ import { stackCSharp, stackUnity } from "../etc/stack";
 import { platformMobile, platformPC, platformTablet, platformXR } from "../etc/platforms";
 import { FixImagePath } from "@/lib/utils/imagePathUtils";
 
-const imagePath = FixImagePath("data/projects/ucrp");
+const imagePath = FixImagePath("/data/projects/ucrp");
 
 export const projectUCRP = {
     id: { 
@@ -122,24 +122,24 @@ export const projectUCRP = {
             },
             alt: "XR UI"
         },
-        // {
-        //     image:{
-        //         asset:{
-        //             // url: `/data/projects/ucrp/postImages/Theming.gif`
-        //             url: `d4f3cb5e24444fe035cf49f6529c85b16316f0db-1920x1080-jpg`
-        //         }
-        //     },
-        //     alt: "Multiple collaborators"
-        // },
-        // {
-        //     image:{
-        //         asset:{
-        //             // url: `/data/projects/ucrp/postImages/Theming.gif`
-        //             url: `2799cff45a1b6079a15f9eb87885c11197f95c4c-1920x1080-jpg`
-        //         }
-        //     },
-        //     alt: "Unity asset manager"
-        // },
+        {
+            image:{
+                asset:{
+                    url: `${imagePath}/gallery/ucrp_collaborate.webp`
+                    // url: `d4f3cb5e24444fe035cf49f6529c85b16316f0db-1920x1080-jpg`
+                }
+            },
+            alt: "Multiple collaborators"
+        },
+        {
+            image:{
+                asset:{
+                    url: `${imagePath}/gallery/ucrp_assets.webp`
+                    // url: `2799cff45a1b6079a15f9eb87885c11197f95c4c-1920x1080-jpg`
+                }
+            },
+            alt: "Unity asset manager"
+        },
     ],
     postRaw: [{children: [{text: 
     `The project utilizes different SDKs such as 3d data streaming, Identity, Asset manager, Deep Linking, Annotations, Presence, and Metadata.

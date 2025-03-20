@@ -3,7 +3,7 @@ import { stackCSharp, stackJavaScript, stackNextjs, stackReact, stackUnity } fro
 import { platformMobile, platformPC } from "../etc/platforms";
 import { FixImagePath } from "@/lib/utils/imagePathUtils";
 
-const imagePath = FixImagePath("data/projects/ants");
+const imagePath = FixImagePath("/data/projects/ants");
 
 export const projectAnts = {
     id: { 

@@ -3,7 +3,7 @@ import { stackJavaScript, stackNextjs, stackReact } from "../etc/stack";
 import { platformPC } from "../etc/platforms";
 import { FixImagePath } from "@/lib/utils/imagePathUtils";
 
-const imagePath = FixImagePath("data/projects/riskManagement");
+const imagePath = FixImagePath("/data/projects/riskManagement");
 
 export const projectRiskManagement = {
     id: { 
