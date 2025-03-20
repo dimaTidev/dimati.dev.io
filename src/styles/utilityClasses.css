@@ -59,6 +59,21 @@
     height: 1rem;
 }
 
+.u-margin-s{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.u-margin-m{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.u-margin-l{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 .gap-s{
     gap: 3px;
 }

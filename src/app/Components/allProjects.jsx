@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { gql, useSuspenseQuery } from "@apollo/client";
 import Skeleton from "react-loading-skeleton";
 import Fade from "@/lib/UIComponents/fadeIn";
+import Spacer, { SizeSpacer } from "@/lib/UIComponents/Spacer";
 
 // TODO: add error check if there is no variable on remote then catch the error
 
@@ -159,7 +160,7 @@ function ProjectCard({ projectData }){
                         {/* TODO: Optimize animation loading */}
                         {previewAnimationUrl && <Image className={`${Styles.overlay} ${Styles.overlayAnimation}`} style={{objectFit: "cover"}} src={previewAnimationUrl} alt="" sizes={"auto"} fill/>}
                     </div>
-                    <div className={Styles.projectDescription}>
+                    <div className={`${Styles.projectDescription} u-margin-s`}>
                         <div className="u-layout_flex-row u-layout_flex-space-between-center">
                             <div className="u-layout_flex-row u-layout_flex-start-center gap-l">
                                 {collaborators.length > 0 && <Collaborators style={{opacity: "0.8"}} size={Size.XS} collaborators={collaborators}/>}
