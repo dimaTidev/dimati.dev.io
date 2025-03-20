@@ -1,3 +1,5 @@
+import { FixImagePath } from "@/lib/utils/imagePathUtils"
+
 export const person_dimati = {
     id: "dima-tymofiienko",
     fullName: "Dima Tymofiienko",
@@ -10,7 +12,7 @@ export const person_dimati = {
     email: "timofeenkodima@gmail.com",
     avatarImage:{
         asset:{
-            url: "data/persons/dimati.webp"
+            url: FixImagePath("/data/persons/dimati.webp")
         }
     }
 }
@@ -25,7 +27,7 @@ export const person_daronRus = {
     ],
     avatarImage:{
         asset:{
-            url: "data/persons/daronRus.png"
+            url: FixImagePath("/data/persons/daronRus.png")
         }
     }
 }
@@ -40,7 +42,7 @@ export const person_chafik = {
     ],
     avatarImage:{
         asset:{
-            url: "data/persons/chafik.jpg"
+            url: FixImagePath("/data/persons/chafik.jpg")
         }
     }
 }

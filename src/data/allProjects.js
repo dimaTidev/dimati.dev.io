@@ -4,10 +4,10 @@ import { projectRiskManagement } from "./projects/riskManagement";
 import { projectUCRP } from "./projects/ucrp";
 
 const AllProjectsData = [
-    projectUCRP,
-    projectRiskManagement,
+    // projectUCRP
+    // projectRiskManagement,
     projectContentAI,
-    projectAnts
+    // projectAnts
 ]
 
 export default AllProjectsData;
