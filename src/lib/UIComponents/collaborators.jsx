@@ -9,7 +9,7 @@ import { Size } from '@/lib/UIComponents/uiCommon';
  * @param {Object} params
  * @param {Array<{ avatarImageUrl: string }>} params.collaborators
  */
-export default function Collaborators({collaborators, size=Size.M}) {
+export default function Collaborators({collaborators, size=Size.M, ...params}) {
 
   const maxCount = 5;
 
@@ -23,7 +23,7 @@ export default function Collaborators({collaborators, size=Size.M}) {
   const hiddenCount = Math.max(0, collaborators.length - maxCount);
 
   return (
-    <div className={Styles.base}>
+    <div className={Styles.base} {...params}>
         <div className={`${Styles.avatarsContainer} ${Styles[`overlap_${size}`]}`}>
           {avatarsToDraw} 
           {hiddenCount > 0 && <>

@@ -1,21 +1,29 @@
-import { person_daronRus, person_dimati } from "../persons/dimati";
+import { person_daronRus, person_dimati, person_vladTerm } from "../persons/dimati";
 import { stackCSharp, stackJavaScript, stackNextjs, stackReact, stackUnity } from "../etc/stack";
 import { platformMobile, platformPC, platformTablet } from "../etc/platforms";
 import { FixImagePath } from "@/lib/utils/imagePathUtils";
 
-const imagePath = FixImagePath("/data/projects/musicHeroRacer");
+const imagePath = FixImagePath("/data/projects/wod");
 
-export const projectMusicHeroRacer = {
+export const projectWOD = {
     id: { 
-        current: "music-hero-racer" 
+        current: "world-of-derby" 
     }, 
-    title: "Music hero racer",
-    description: `Variation of the Guitar Hero game . In this game, you need to collect blocks to the music. Collect cars and upgrade them.`,
-    orderRank: 107,
+    title: "World of Derby",
+    description: `Released in 2015 on GooglePlay and AppStore. World of Derby its a racing game about derby in arenas. We were inspired by the game Flatout 2. In the game a player can buy and upgrade, repair cars and takes part in arena battles.`,
+    orderRank: 114,
     team:[
         {
             person: person_dimati,
-            position: "Senior software developer"
+            position: "Software developer"
+        },
+        {
+            person: person_daronRus,
+            position: "Software developer"
+        },
+        {
+            person: person_vladTerm,
+            position: "Software developer"
         }
     ],
     previewImage:{
@@ -27,8 +35,7 @@ export const projectMusicHeroRacer = {
     //     }
     // },
     videoLinks: [
-        `https://www.youtube.com/embed/hdQsFNckNtA`,
-        `https://www.youtube.com/embed/JZoOfqqCLDU`
+        `https://www.youtube.com/embed/MqUwtk5L-_o`,
     ],
     // galleryScreenshots: [
     //     { asset:{ url: `${imagePath}/gallery/screen_1.webp` }},

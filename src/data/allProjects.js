@@ -8,6 +8,7 @@ import { projectNetworkBattleships } from "./projects/networkBattleships";
 import { projectRiskManagement } from "./projects/riskManagement";
 import { projectUCRP } from "./projects/ucrp";
 import { projectVrWeaponsShowcase } from "./projects/vrWeaponsShowcase";
+import { projectWOD } from "./projects/wod";
 
 const AllProjectsData = [
     projectUCRP,
@@ -20,6 +21,7 @@ const AllProjectsData = [
     projectVrWeaponsShowcase,
     projectMusicHeroRacer,
     projectNetworkBattleships,
+    projectWOD,
 ]
 
 export default AllProjectsData;

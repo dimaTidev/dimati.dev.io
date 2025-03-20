@@ -32,6 +32,21 @@ export const person_daronRus = {
     }
 }
 
+export const person_vladTerm = {
+    id: "vlad-havryliuk",
+    fullName: "Vlad Havryliuk",
+    shortAboutMe: "Software developer",
+    location: "Warsaw, Poland",
+    socialLinks: [
+        `https://www.linkedin.com/in/vladyslav-havryliuk/`,    
+    ],
+    avatarImage:{
+        asset:{
+            url: FixImagePath("/data/persons/vladTerm.jpg")
+        }
+    }
+}
+
 export const person_chafik = {
     id: "chafik-achache",
     fullName: "Chafik Achache",

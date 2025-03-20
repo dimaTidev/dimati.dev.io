@@ -160,12 +160,21 @@ function ProjectCard({ projectData }){
                         {previewAnimationUrl && <Image className={`${Styles.overlay} ${Styles.overlayAnimation}`} style={{objectFit: "cover"}} src={previewAnimationUrl} alt="" sizes={"auto"} fill/>}
                     </div>
                     <div className={Styles.projectDescription}>
-                        <div className="u-layout_flex-row u-layout_flex-start-center gap-l">
-                            {collaborators.length > 0 && <Collaborators size={Size.XS} collaborators={collaborators}/>}
-                            <h4>{projectData.title}</h4>
+                        <div className="u-layout_flex-row u-layout_flex-space-between-center">
+                            <div className="u-layout_flex-row u-layout_flex-start-center gap-l">
+                                {collaborators.length > 0 && <Collaborators style={{opacity: "0.8"}} size={Size.XS} collaborators={collaborators}/>}
+                                <h4 className="u-text-secondary">{projectData.title}</h4>
+                            </div>
+                            {projectData.techStack && (
+                                <div className="u-layout_flex-row u-layout_flex-start-center" style={{opacity: "0.65"}}>
+                                    {projectData.techStack.map((el, id) => {
+                                        return <Chip key={id} icon={el.icon.asset.url}/>;
+                                    })}
+                                </div>
+                            )}
                         </div>
 
-                        <div className="u-layout_flex-row u-layout_flex-space-between-center" style={{opacity: "0.7"}}>
+                        {/* <div className="u-layout_flex-row u-layout_flex-space-between-center" style={{opacity: "0.7"}}>
                             {projectData.techStack && (
                                 <div className="u-layout_flex-row u-layout_flex-start-center">
                                     {projectData.techStack.map((el, id) => {
@@ -181,7 +190,7 @@ function ProjectCard({ projectData }){
                                     })}
                                 </div>
                             )}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </Link>
