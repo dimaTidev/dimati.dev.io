@@ -1,4 +1,4 @@
-import { person_daronRus, person_dimati, person_vladTerm } from "../persons/dimati";
+import { person_daronRus, person_dimati, person_vladTerm } from "../persons/persons";
 import { stackCSharp, stackJavaScript, stackNextjs, stackReact, stackUnity } from "../etc/stack";
 import { platformMobile, platformPC, platformTablet } from "../etc/platforms";
 import { FixImagePath } from "@/lib/utils/imagePathUtils";

@@ -1,4 +1,4 @@
-import { person_dimati } from "./persons/dimati";
+import { person_dimati } from "./persons/persons";
 
 export const aboutMeData = {
     person: person_dimati,

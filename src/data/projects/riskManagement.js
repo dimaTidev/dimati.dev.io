@@ -1,4 +1,4 @@
-import { person_dimati } from "../persons/dimati";
+import { person_dimati } from "../persons/persons";
 import { stackJavaScript, stackNextjs, stackReact } from "../etc/stack";
 import { platformPC } from "../etc/platforms";
 import { FixImagePath } from "@/lib/utils/imagePathUtils";
